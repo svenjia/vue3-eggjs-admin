@@ -1,0 +1,134 @@
+[
+  {
+    "code": "system",
+    "name": "System",
+    "uri": "/system",
+    "method": null,
+    "type": 1,
+    "children": [
+      {
+        "code": "system.user",
+        "name": "UserAdmin",
+        "uri": "/system/user",
+        "type": 1,
+        "children": [
+          {
+            "code": "system.user.create",
+            "name": "createUser",
+            "uri": "/user/create",
+            "method": "POST",
+            "type": 2
+          },
+          {
+            "code": "system.user.list",
+            "name": "userList",
+            "uri": "/user/list",
+            "method": "GET",
+            "type": 2
+          },
+          {
+            "code": "system.user.assign",
+            "name": "userAssignRole",
+            "uri": "/user/assign",
+            "method": "POST",
+            "type": 2
+          },
+          {
+            "code": "system.user.ban",
+            "name": "userToggle",
+            "uri": "/user/toggle",
+            "method": "POST",
+            "type": 2
+          },
+          {
+            "code": "system.user.destroy",
+            "name": "destroyUser",
+            "uri": "/user/destroy",
+            "method": "POST",
+            "type": 2
+          },
+          {
+            "code": "system.user.roles",
+            "name": "userRoles",
+            "uri": "/user/roles",
+            "method": "GET",
+            "type": 2
+          },
+          {
+            "code": "system.user.reset-password",
+            "name": "resetPsw",
+            "uri": "/user/reset-password",
+            "method": "POST",
+            "type": 2
+          }
+        ]
+      },
+      {
+        "code": "system.role",
+        "name": "roleAdmin",
+        "uri": "/system/role",
+        "type": 1,
+        "is_show": 0,
+        "children": [
+          {
+            "code": "system.role.create",
+            "name": "createRole",
+            "uri": "/role/create",
+            "method": "POST",
+            "type": 2
+          },
+          {
+            "code": "system.role.list",
+            "name": "roleList",
+            "uri": "/role/list",
+            "method": "GET",
+            "type": 2
+          },
+          {
+            "code": "system.role.resources",
+            "name": "getRoleResource",
+            "uri": "/role/resources",
+            "method": "GET",
+            "type": 2
+          },
+          {
+            "code": "system.role.users",
+            "name": "getRoleUsers",
+            "uri": "/role/users",
+            "method": "GET",
+            "type": 2
+          },
+          {
+            "code": "system.role.destroy",
+            "name": "delRole",
+            "uri": "/role/destroy",
+            "method": "POST",
+            "type": 2
+          }
+        ]
+      },
+      {
+        "code": "system.permission",
+        "name": "Permission",
+        "uri": "/system/permission",
+        "type": 1,
+        "children": [
+          {
+            "code": "system.resource.all",
+            "name": "getAllResource",
+            "uri": "/resource/all",
+            "method": "GET",
+            "type": 2
+          },
+          {
+            "code": "system.resource.assign",
+            "name": "assignResource",
+            "uri": "/resource/assign",
+            "method": "POST",
+            "type": 2
+          }
+        ]
+      }
+    ]
+  }
+]

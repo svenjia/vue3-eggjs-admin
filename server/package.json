@@ -1,0 +1,53 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "@eggplugin/s3": "^1.0.2",
+    "egg": "^3",
+    "egg-mongoose": "^3.3.1",
+    "egg-router-plus": "^2.0.0",
+    "egg-scripts": "^2",
+    "egg-validate": "^2.0.2",
+    "knex": "^2.3.0",
+    "knex-paginate": "^3.0.2",
+    "moment": "^2.29.4",
+    "mongoose-paginate-v2": "^1.7.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "egg-mock": "^5",
+    "eslint": "^8",
+    "eslint-config-egg": "^12"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=server",
+    "stop": "egg-scripts stop --title=server",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "ci": {
+    "version": "16, 18",
+    "type": "github"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
