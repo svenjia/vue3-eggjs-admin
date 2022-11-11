@@ -1,4 +1,4 @@
-<div align="center"> <a href="https://github.com/svenjia/vue3-eggjs-admin"> <img width="100" src="./client/public/logo.png"> </a> <br> <br>
+<div align="center"> <a href="https://github.com/svenjia/vue3-eggjs-admin"> <img width="250" src="./client/public/logo.png"> </a> <br> <br>
 </div>
 <h1>vue3-eggjs-admin</h1>
 ## 介绍
