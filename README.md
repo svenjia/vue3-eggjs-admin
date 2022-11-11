@@ -57,20 +57,19 @@ pnpm run dev
 
 ## 程序说明
 - ### client相关
-  - 存放前端代码，关于组件使用、国际化等，可查看[文档](https://element-plus-admin-doc.cn/guide/introduction.html) 
-  - 前端的路由没有采用动态挂载，访问权限是由后端进行返回，然后标记哪些路由可以用来生成菜单，代码见client/store/modules/permission.ts 中的getResource方法 
-  - 后端返回的错误代码，由拦截器统计处理，页面中只有处理成功的逻辑
+1.存放前端代码，关于组件使用、国际化等，可查看[文档](https://element-plus-admin-doc.cn/guide/introduction.html)
+2.前端的路由没有采用动态挂载，访问权限是由后端进行返回，然后标记哪些路由可以用来生成菜单，代码见client/store/modules/permission.ts 中的getResource方法
+3.后端返回的错误代码，由拦截器统计处理，页面中只有处理成功的逻辑
 - ### server相关
-  - 配置文件全部放在server/config,ENV文件用来标记读取哪些配置，可以查看[eggjs配置相关的文档](https://www.eggjs.org/zh-CN/basics/config)
-  - 整个系统的菜单、api访问都被视为系统资源，资源配置放在config/resources.json，注意type=1表示是菜单，name需要和前端route定义的name保持一致
-  - 前端访问权限拦截在中间件permission中，全局的错误捕获防止error_handler中间件
-  - 为了不手写SQL，采用了Knex sql构造工具，在singleton中的代码，在app启动时进行挂载
-  - server启动时，会自动检测是否有admin123这个管理员账号，没有会自动生成。（可以自行配置）注意：前端的登录账号校验是6-16位字母和数字的组合
-  - 上传前端直接用element-plus的upload组件，后端用egg内置的multipart插件，存储用的s3
+1.配置文件全部放在server/config,ENV文件用来标记读取哪些配置，可以查看[eggjs配置相关的文档](https://www.eggjs.org/zh-CN/basics/config)
+2.整个系统的菜单、api访问都被视为系统资源，资源配置放在config/resources.json，注意type=1表示是菜单，name需要和前端route定义的name保持一致
+3.前端访问权限拦截在中间件permission中，全局的错误捕获防止error_handler中间件
+4.为了不手写SQL，采用了Knex sql构造工具，在singleton中的代码，在app启动时进行挂载
+5.server启动时，会自动检测是否有admin123这个管理员账号，没有会自动生成。（可以自行配置）注意：前端的登录账号校验是6-16位字母和数字的组合
+6.上传前端直接用element-plus的upload组件，后端用egg内置的multipart插件，存储用的s3
 
 ## 未完待续（欢迎提建议）
 
 ## 许可证
 
 [MIT](./LICENSE)
-
