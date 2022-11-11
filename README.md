@@ -1,13 +1,12 @@
-<div align="center"> <a href="https://github.com/svenjia/vue3-eggjs-admin"> <img width="100" src="./client/public/logo.png"> </a> <br> <br>
-
-<h1>vue3-eggjs-admin</h1>
+<div align="center"> <a href="https://github.com/svenjia/vue3-eggjs-admin"> <img width="240" src="./client/public/logo.png"> </a> 
 </div>
+<h1>vue3-eggjs-admin</h1>
 
 ## 介绍
 
 vue3-eggjs-admin 是一个采用了Vue3、Element-plus、TypeScript、eggjs技术栈的后台管理系统基础框架，可以迅速作为项目的开发模板，适用于有前、后端（Nodejs）经验全干开发者。
 
-该系统集成了后台系统中常见的登录、权限管理、上传文件功能，可直接开发业务代码
+该系统集成了后台系统中常见的登录、权限、用户、角色管理、上传文件功能，可直接在此基础上进行业务代码开发。
 
 ## 特性
 
